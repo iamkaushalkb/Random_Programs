@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>JS Problem 1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+<script>
+window.onload = function() {
+    var src = document.getElementById("one"),
+        dst = document.getElementById("two");
+    src.addEventListener('input', function() {
+        dst.value = src.value;
+    });
+};
+
+// jQuery implementation
+
+$(function () {
+    var $src = $('#three'),
+        $dst = $('#four');
+    $src.on('input', function () {
+        $dst.val($src.val());
+    });
+});
+</script>
+</head>
+<body>
+<strong> With vanilla JavaScript</strong>
+<br />
+<input type="text" id="one" name="one" />
+<input type="text" id="two" name="two" />
+
+<br />
+<br />
+
+<strong>With jQuery</strong>
+<br />
+<input type="text" id="three" name="three" />
+<input type="text" id="four" name="four" />
+</body>
+</html>
